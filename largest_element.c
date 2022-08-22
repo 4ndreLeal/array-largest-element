@@ -4,7 +4,6 @@ int main() {
     printf("Give the array's size: ");
     scanf("%d", &n);
     int A[n];
-    int var;
     int largest_number;
     printf("Fill the array: ");
     for(i = 0; i < n; i++) {
@@ -19,6 +18,7 @@ int main() {
             }
         }
     }
-    printf("Largest number of given array is %d", A[n-1]);
+    largest_number = A[n-1];
+    printf("Largest number of given array is %d", largest_number);
     return 0;
 }
